@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Amount" android:text="7000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+        <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/chip2" android:text="Add Income"/>
+            <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/chip3" android:text="Add Expense"/>
+            <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date" android:id="@+id/date_input_selector" android:text="date"/>
+                <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/spinner" android:layout_weight="1"/>
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="hint"/>
+                    <Button
+                            android:text="SAVE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/button" android:layout_weight="1"/>
+                    <Button
+                            android:text="Button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" android:id="@+id/dateButton"
+                            android:layout_weight="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.chip.ChipGroup>
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>
